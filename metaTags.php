@@ -1,8 +1,8 @@
 <?php
-/////////////Meta tag to store data.///////////////////
 	echo metahttp("refresh","5; URL=myfile.php")."\n";
 	echo metaname("Description","NJIT,PCS,Lakewood")."\n";
-	
+
+////////////////Meta tag to store data.///////////////////	
 	function metaname( $name = NULL, $content = NULL) {
 			$meta ='<meta';
 		if(isset($name)){
