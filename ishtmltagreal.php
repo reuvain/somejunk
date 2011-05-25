@@ -1,8 +1,6 @@
-
-
 <?php
 
-	function isHtmlTagValid($tag){
+function isHtmlTagValid($tag){
 	
 			$htmlTags=array ( "!--", "!DOCTYPE", "a", "abbr", "acronym", "address", "applet", "area", "article", "aside", "audio", 
 			"b", "base", "basefont", "bdo", "big", "blockquote", "body", "br", "button", "canvas", "caption", "center", "cite", 
@@ -16,11 +14,6 @@
 			
 		if (!in_array($tag, $htmlTags)){
 			die("Invalid HTML tag");
-		}else{
-			echo   '<' . $tag . '>';
-		}			
-	}
-
-	isHtmlTagValid('title');	
+		}		
+	}	
 ?>
-
