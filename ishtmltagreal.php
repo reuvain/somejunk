@@ -14,6 +14,8 @@ function isHtmlTagValid($tag){
 			
 		if (!in_array($tag, $htmlTags)){
 			die("Invalid HTML tag");
+		}else{
+			echo '<' . $tag . '>';
 		}		
 	}	
 ?>
